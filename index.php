@@ -351,7 +351,7 @@ file_get_contents("https://api.telegram.org/bot$botToken/deleteMessage?chat_id=$
 //========finalize end=========//
 $channel = json_encode([
     'inline_keyboard' => [
-        [['text' => "Gʀᴏᴜᴘ", 'url' => "https://t.me/DAXXSUPPORT"], ['text' => "Cʜᴀɴɴᴇʟ", 'url' => "https://t.me/ALLTYPECC"]],
+        [['text' => "Gʀᴏᴜᴘ", 'url' => "https://t.me/gitwizardbypass2"], ['text' => "Cʜᴀɴɴᴇʟ", 'url' => "https://t.me/ALLTYPECC"]],
         [['text' => "Bᴀᴄᴋ", 'callback_data' => 'back2']]
     ]
 ]);
