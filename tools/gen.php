@@ -227,7 +227,7 @@ $message = $_POST['message'] ?? '';
 
 function fetchBINInfo($bin) {
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/' . $bin);
+    curl_setopt($ch, CURLOPT_URL, 'https://binlist.net/' . $bin);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);

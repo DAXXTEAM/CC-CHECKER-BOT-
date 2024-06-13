@@ -103,7 +103,7 @@ $start_time = microtime(true);
   //------------Card info------------//
   $lista = ''.$cc.'|'.$mes.'|'.$an.'|'.$cvv.'';
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/'.$cc.'');
+  curl_setopt($ch, CURLOPT_URL, 'https://binlist.net/'.$cc.'');
   curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
   'Host: lookup.binlist.net',

@@ -65,7 +65,7 @@ if ((strpos($message, "/bin") === 0) || (strpos($message, "!bin") === 0) || (str
     $bin = substr($message, 5);
     $bin = substr($bin, 0, 6);
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/' . $bin);
+    curl_setopt($ch, CURLOPT_URL, 'https://binlist.net/' . $bin);
     curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Host: lookup.binlist.net',
